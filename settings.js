@@ -14,27 +14,27 @@ module.exports = {
   STORES: {
     MemexBurnaby: {
       CONTEXT: "[MEMEX BURNABY]",
-      URL: "https://www.memoryexpress.com/Category/VideoCards?FilterID=b6b90ad4-e07c-39ee-6b38-76eaffc7f8ef&InventoryType=InStock&Inventory=BBBC",
+      URL: "https://www.memoryexpress.com/Category/VideoCards?FilterID=f45809a5-4cd7-f27a-ade0-61742d10ac98&InventoryType=InStock&Inventory=BBBC",
       STOCK_INDICATOR: ".c-cact-product-list__body .c-shca-icon-item",
     },
     MemexVancouver: {
       CONTEXT: "[MEMEX VANCOUVER]",
-      URL: "https://www.memoryexpress.com/Category/VideoCards?FilterID=b6b90ad4-e07c-39ee-6b38-76eaffc7f8ef&InventoryType=InStock&Inventory=VBBC",
+      URL: "https://www.memoryexpress.com/Category/VideoCards?FilterID=f45809a5-4cd7-f27a-ade0-61742d10ac98&InventoryType=InStock&Inventory=VBBC",
       STOCK_INDICATOR: ".c-cact-product-list__body .c-shca-icon-item",
     },
     CCBurnaby: {
       CONTEXT: "[CC BURNABY]",
-      URL: "https://www.canadacomputers.com/en/915/desktop-graphics-cards?pickup=56&q=GPU-GeForce+RTX+5090-GeForce+RTX+5080",
+      URL: "https://www.canadacomputers.com/en/915/desktop-graphics-cards?pickup=56&q=GPU-GeForce+RTX+5090",
       STOCK_INDICATOR: ".products.product-list .product",
     },
     CCVancouver: {
       CONTEXT: "[CC VANCOUVER]",
-      URL: "https://www.canadacomputers.com/en/915/desktop-graphics-cards?pickup=51&q=GPU-GeForce+RTX+5090-GeForce+RTX+5080",
+      URL: "https://www.canadacomputers.com/en/915/desktop-graphics-cards?pickup=51&q=GPU-GeForce+RTX+5090",
       STOCK_INDICATOR: ".products.product-list .product",
     },
     CCSurrey: {
       CONTEXT: "[CC SURREY]",
-      URL: "https://www.canadacomputers.com/en/915/desktop-graphics-cards?pickup=72&q=GPU-GeForce+RTX+5090-GeForce+RTX+5080",
+      URL: "https://www.canadacomputers.com/en/915/desktop-graphics-cards?pickup=72&q=GPU-GeForce+RTX+5090",
       STOCK_INDICATOR: ".products.product-list .product",
     },
     CCBurnabyAMD: {
