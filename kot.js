@@ -68,21 +68,6 @@ class StockChecker {
       this.context = await this.browser.newContext();
       this.page = await this.context.newPage();
 
-      if (this.config.CONTEXT.includes("[CC BURNABY]")) {
-        // Temporarily disable cache for CC Burnaby only
-        await this.page.route("**/*", (route) => {
-          let headers = {
-            ...route.request().headers(),
-          };
-          if (Math.random() < 1 / 3) {
-            headers = {
-              ...headers,
-              "Cache-Control": "no-cache",
-            };
-          }
-          route.continue({ headers });
-        });
-      }
     } catch (error) {
       this.notifySubscribers(`${MESSAGES.ERROR} ${this.config.URL} ${error}`);
       this.logMessage(
