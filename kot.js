@@ -191,3 +191,5 @@ BOT.on("message", (msg) => {
     });
   }
 }); */
+
+module.exports = StockChecker;

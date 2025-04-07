@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node kot.js",
+    "test": "npx jest"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
