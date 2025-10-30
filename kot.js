@@ -26,7 +26,7 @@ class StockChecker {
   }
 
   async delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
   async notifySubscribers(message, buffer) {
@@ -67,7 +67,6 @@ class StockChecker {
       this.browser = await firefox.launch({ headless: true });
       this.context = await this.browser.newContext();
       this.page = await this.context.newPage();
-
     } catch (error) {
       this.notifySubscribers(`${MESSAGES.ERROR} ${this.config.URL} ${error}`);
       this.logMessage(
@@ -130,37 +129,25 @@ class StockChecker {
   }
 }
 
-const MemexBurnaby = new StockChecker(settings.STORES.MemexBurnaby);
-const MemexVancouver = new StockChecker(settings.STORES.MemexVancouver);
-const CCBurnaby = new StockChecker(settings.STORES.CCBurnaby);
-const CCVancouver = new StockChecker(settings.STORES.CCVancouver);
-const CCSurrey = new StockChecker(settings.STORES.CCSurrey);
-const CCBurnabyAMD = new StockChecker(settings.STORES.CCBurnabyAMD);
-const CCVancouverAMD = new StockChecker(settings.STORES.CCVancouverAMD);
-const CCRichmondAMD = new StockChecker(settings.STORES.CCRichmondAMD);
+const SalmonEnergyTest = new StockChecker(settings.STORES.SalmonEnergyTest);
+const SalmonEnergyXXS = new StockChecker(settings.STORES.SalmonEnergyXXS);
+const SalmonEnergyXS = new StockChecker(settings.STORES.SalmonEnergyXS);
+const SalmonEnergyS = new StockChecker(settings.STORES.SalmonEnergyS);
+const SalmonEnergyM = new StockChecker(settings.STORES.SalmonEnergyM);
 
-MemexBurnaby.checkStock()
+SalmonEnergyTest.checkStock()
   .then(() => console.log("job completed"))
   .catch(console.error);
-MemexVancouver.checkStock()
+SalmonEnergyXXS.checkStock()
   .then(() => console.log("job completed"))
   .catch(console.error);
-CCBurnaby.checkStock()
+SalmonEnergyXS.checkStock()
   .then(() => console.log("job completed"))
   .catch(console.error);
-CCVancouver.checkStock()
+SalmonEnergyS.checkStock()
   .then(() => console.log("job completed"))
   .catch(console.error);
-CCSurrey.checkStock()
-  .then(() => console.log("job completed"))
-  .catch(console.error);
-CCBurnabyAMD.checkStock()
-  .then(() => console.log("job completed"))
-  .catch(console.error);
-CCVancouverAMD.checkStock()
-  .then(() => console.log("job completed"))
-  .catch(console.error);
-CCRichmondAMD.checkStock()
+SalmonEnergyM.checkStock()
   .then(() => console.log("job completed"))
   .catch(console.error);
 
